@@ -1,0 +1,144 @@
+@font-face {
+    font-family: TTLakes-Medium;
+    src: url(./fonts/TTLakes-Medium.woff);
+}
+
+body {
+    margin: 0;
+    font-family: TTLakes-Medium, sans-serif;
+    font-size: 16px;
+}
+
+.sidebar {
+    width: 320px;
+    height: 1024px;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__header {
+    width: 320px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    gap: 80px;
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FF3E79;
+    border: none;
+    cursor: pointer;
+}
+
+.button__close {
+    background-image: url(../images/icons/close.svg);
+}
+
+.button__search {
+    background-image: url(../images/icons/search.svg);
+}
+
+menu {
+    padding-left: 0;
+}
+
+.header__closeBurger-logo {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.sidebar__navigation-menu {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar__navigation-item {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+}
+
+.sidebar__navigation-item:hover {
+    color: #7E7E82;
+    cursor: pointer;
+    transition: .2s;
+    content: "";
+    background-image: url(../images/highlight.svg);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+}
+
+.sidebar__navigation-link,
+.sidebar__navigation-link:visited {
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+.sidebar__navigation-link:hover,
+.sidebar__navigation-link:active {
+    color: #7E7E82;
+}
+
+.sidebar__footer {
+    margin-left: 24px;
+}
+
+.sidebar__feedback {
+    display: flex;
+    gap: 24px;
+    padding-top: 200px;
+}
+
+.button__phone {
+    background-image: url(../images/icons/phone.svg);
+}
+
+.button__chat {
+    background-image: url(../images/icons/chat.svg);
+}
+
+.button__profile {
+    background-image: url(../images/icons/profile.svg);
+}
+
+.sidebar__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 16px;
+    padding-bottom: 40px;
+}
+
+.sidebar__contacts-link,
+.sidebar__contacts-link:visited,
+.sidebar__contacts-link:active,
+.sidebar__contacts-link:hover {
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+.sidebar__phone {
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.sidebar__languanes-button {
+    border: none;
+    background: none;
+    padding: 0;
+    font-family: TTLakes-Medium, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sidebar__languanes-button:hover {
+    color: #7E7E82;
+}
