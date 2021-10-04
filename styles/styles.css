@@ -26,6 +26,7 @@ body {
 
 .sidebar {
     min-width: 320px;
+    display: flex;
 }
 
 .inner_container {
